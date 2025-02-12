@@ -11,7 +11,7 @@
         <form action="/submit" method="POST">
             <fieldset>
                 <legend>Personal Details</legend>
-                <table>
+                <table width="300px" height="auto">
                     <tr>
                         <td>
                             <label for="name">Name : </label>
@@ -34,6 +34,14 @@
                         </td>
                         <td>
                             <input type="date" id="dob" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file">Choose your photo : </label>
+                        </td>
+                        <td>
+                            <input type="file" id="file" required>
                         </td>
                     </tr>
                     <tr>
@@ -64,6 +72,7 @@
                                 <option value="afganistan">Afganistan</option>
                             </select>
                         </td>
+
                     </tr>
                 </table>
                 
@@ -72,7 +81,7 @@
 
             <fieldset>
                 <legend>Account Details</legend>
-                <table>
+                <table width="300px" height="auto">
                     <tr>
                         <td>
                             <label for="email">Email : </label>
@@ -84,7 +93,7 @@
                     <tr>
                         <td><label for="username">Username : </label></td>
                         <td>
-                            <input type="text" id="username">
+                            <input type="text" id="username" placeholder="Enter your username">
                         </td>
                     </tr>
                     <tr>
@@ -100,7 +109,7 @@
 
             <fieldset>
                 <legend>Preferences</legend>
-                <table>
+                <table width="300px" height="auto">
                     <tr>
                         <td>
                             <label for="range">Range : </label>
@@ -117,14 +126,7 @@
                             <input type="color" id="colour" required>
                         </td>
                     </tr>
-                    <tr>
-                        <td>
-                            <label for="file">Choose file : </label>
-                        </td>
-                        <td>
-                            <input type="file" id="file" required>
-                        </td>
-                    </tr>
+                    
                     
                     <tr>
                         <td>
@@ -146,7 +148,7 @@
                             Comments:
                         </td>
                         <td>
-                            <textarea name="message" rows="4" cols="50" placeholder="Any additional comments"></textarea>
+                            <textarea name="message" rows="4" cols="10" placeholder="Any additional comments"></textarea>
                         </td>
                     </tr>
                 </table>
