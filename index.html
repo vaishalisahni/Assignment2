@@ -7,122 +7,155 @@
     <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/022/597/440/original/3d-file-html-icon-illustration-png.png" type="image/x-icon">
 </head>
 <body>
-    <table>
-        <form action="">
-            <tr>
-                <td>
-                    <label for="name">Name : </label>
-                </td>
-                <td>
-                    <input type="text" placeholder="Enter your Full Name" required autofocus id="name">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="phn">Phone no.: </label>
-                </td>
-                <td>
-                    <input type="tel" id="phn" placeholder="Enter your Phone Number" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="email">Email : </label>
-                </td>
-                <td>
-                    <input type="email" id="email" placeholder="Enter your Email Address" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="pass">Password : </label>
-                </td>
-                <td>
-                    <input type="password" id="pass" placeholder="Enter your Password" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="range">Range : </label>
-                </td>
-                <td>
-                    <input type="range" id="range" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="colour">Select Colour: </label>
-                </td>
-                <td>
-                    <input type="color" id="colour" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="file">Choose file : </label>
-                </td>
-                <td>
-                    <input type="file" id="file" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="dob">Date of Birth : </label>
-                </td>
-                <td>
-                    <input type="date" id="dob" required>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Gender : 
-                </td>
-                <td>
-                    <input type="radio" name="gender" id="male">
-                    <label for="male">Male</label>
+    
+        <form action="/submit" method="POST">
+            <fieldset>
+                <legend>Personal Details</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Name : </label>
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Enter your Full Name" required autofocus id="name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="phn">Phone no.: </label>
+                        </td>
+                        <td>
+                            <input type="tel" id="phn" placeholder="Enter your Phone Number" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="dob">Date of Birth : </label>
+                        </td>
+                        <td>
+                            <input type="date" id="dob" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gender : 
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" id="male">
+                            <label for="male">Male</label>
+        
+                            <input type="radio" name="gender" id="female">
+                            <label for="female">Female</label>
+                            
+                        </td>
+                        
+                    </tr>
 
-                    <input type="radio" name="gender" id="female">
-                    <label for="female">Female</label>
-                    
-                </td>
+                    <tr>
+                        <td>
+                            Select Country :
+                        </td>
+                        <td>
+                            <select name="" id="" required>
+                                <option value="india">India</option>
+                                <option value="uk">United Kingdom</option>
+                                <option value="pakistan">Pakistan</option>
+                                <option value="china">China</option>
+                                <option value="afganistan">Afganistan</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
                 
-            </tr>
-            <tr>
-                <td>
-                    Programming Languages : 
-                </td>
-                <td>
-                    
-                    <input type="checkbox" id="webdev">
-                    <label for="webdev">Web Development</label>
+            </fieldset>
 
-                    <input type="checkbox" id="dsa">
-                    <label for="dsa">DSA</label>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="email">Email : </label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" placeholder="Enter your Email Address" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="username">Username : </label></td>
+                        <td>
+                            <input type="text" id="username">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="pass">Password : </label>
+                        </td>
+                        <td>
+                            <input type="password" id="pass" placeholder="Enter your Password" required>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="range">Range : </label>
+                        </td>
+                        <td>
+                            <input type="range" id="range" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="colour">Select Colour: </label>
+                        </td>
+                        <td>
+                            <input type="color" id="colour" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="file">Choose file : </label>
+                        </td>
+                        <td>
+                            <input type="file" id="file" required>
+                        </td>
+                    </tr>
                     
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Select Country :
-                </td>
-                <td>
-                    <select name="" id="" required>
-                        <option value="india">India</option>
-                        <option value="uk">United Kingdom</option>
-                        <option value="pakisthan">Pakisthan</option>
-                        <option value="china">China</option>
-                        <option value="afganistan">Afganistan</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-                </td>
+                    <tr>
+                        <td>
+                            Programming Languages : 
+                        </td>
+                        <td>
+                            
+                            <input type="checkbox" id="webdev">
+                            <label for="webdev">Web Development</label>
+        
+                            <input type="checkbox" id="dsa">
+                            <label for="dsa">DSA</label>
+                            
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Comments:
+                        </td>
+                        <td>
+                            <textarea name="message" rows="4" cols="50" placeholder="Any additional comments"></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
             
-            </tr>
         </form>
-    </table>
+    
 </body>
 </html>
